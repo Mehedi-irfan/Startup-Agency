@@ -3,3 +3,84 @@ body{
     padding: 0;
     font-family: 'Encode Sans SC', sans-serif;
 }
+
+/*-------- background-banner-style-start------------- */
+.header-banner{
+    background-image: url(images/background-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.header-banner::after{
+    content: " ";
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    top: 0;
+    z-index: -1;
+}
+.header-banner2{
+    z-index: 2;
+}
+.header-banner-part2{
+    margin-top: 250px;
+    padding-right: 80px;
+}
+.header-banner-title{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.header-banner-info{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.header-button{
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.header-button a{
+    text-decoration: none;
+    border: 2px solid navy;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 60px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.header-button a::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: navy;
+    transform: translateX(-100%);
+    transition: all 0.5s linear;
+}
+.header-button a:hover:before{
+    transform: translateX(0);
+    z-index: -1;
+}
+.header-button a:hover{
+    color: #fff;
+}
+.header-button2{
+    margin-left: 20px;
+    border: none;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+/*-------- background-banner-style-End------------- */
